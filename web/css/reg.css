@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    /* 弹性盒子模型 */
+    display: flex;
+    /* 把所有写在body标签中的代码横向居中
+    上面定义了flex盒子，这里就直接用盒子模型定位 */
+    justify-content: center;
+    /* 元素位于容器的中心 */
+    align-items: center;
+    background: linear-gradient(200deg, #a8edea, #fed6e3);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 灵活的项目将垂直显示，如一列一个样 */
+    flex-direction: column;
+    width: 350px;
+    height: 75%;
+    background-color: #4471a3;
+    /* 圆角 */
+    border-radius: 10px;
+    /* 盒子阴影 */
+    /*box-shadow: 15px 15px 10px rgba(33, 45, 58, 0.3);*/
+    /* 溢出隐藏  如果这个元素超出给定的宽度和高度，超出部分就会隐藏*/
+    overflow: hidden;
+    /* 相对定位 相对于其正常位置进行定位，比如left20 他就会向left添加20像素*/ /*position: relative;*/
+}
+.container form {
+    width: 600px;
+    height: 75%;
+    display: flex;
+    /* 均匀排列每个元素周围分配相同的空间 */
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.tbx {
+    width: 250px;
+    height: 40px;
+    /* 使outline属性无效，使绘制于元素周围的一条线无效 */
+    outline: none;
+    /* 边框不显示 */
+    border: none;
+    color: rgb(14, 12, 12);
+    font-size: 15px;
+    font-weight: 300;
+    text-align:center;
+    border-radius: 5px;
+}
+
+.tbx::placeholder {
+    color: rgb(236,231, 231);
+    font-size: 16px;
+}
+
+.sex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.sub {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+}
+.sub:hover {
+    background-color: #1b6d85;
+    cursor: pointer;
+}
+
+.container h1 {
+    color: #ecf0f1;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-shadow: 5px 5px rgba(33, 45, 58, 0.3);
+    z-index: 1;
+    margin-bottom: 15px;
+}
+.toLogin{
+    color:#cccccc;
+    text-decoration: none;
+    cursor: pointer;    margin-bottom: 10px;
+}
+.mesg{
+    color: red;
+}
